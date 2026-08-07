@@ -1,12 +1,17 @@
 // use axum::routes;
 //mod routes;
-use axum_app::routes;
+// use axum_app::routes;
+use axum_app::{routes, init};
 
 #[tokio::main]
 async fn main() {
     let listener = tokio::net::TcpListener::bind("127.0.0.1:8000")
         .await
         .unwrap();
+
+    init::logging():    
+
+      tracing::info!("Server is starting...");
 
     let app = routes::router();
 
