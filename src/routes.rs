@@ -14,7 +14,10 @@ use crate::handlers::{
         log_in_handler, log_out_handler, post_login_handler, post_sign_up_hander, sign_up_handler,
     },
     public::{home, page_not_found_handler},
-    todos::{create_todo_handler, todos_handler},
+    todos::{
+        create_todo_handler, delete_todo_handler, post_create_todo_handler, todos_handler,
+        toggle_todo_handler,
+    },
 };
 
 use crate::{
@@ -53,10 +56,20 @@ fn auth_routes() -> Router<AppState> {
 
 fn protected_routes() -> Router<AppState> {
     Router::new()
-        .route("/create", get(create_todo_handler))
-        .route("/todos", get(todos_handler))
         .route("/log-out", post(log_out_handler))
+        .nest("/todos", todo_routes())
         .route_layer(middleware::from_fn(required_authentication))
+}
+
+fn todo_routes() -> Router<AppState> {
+    Router::new()
+        .route("/:page", get(todos_handler)) // -> /todos/
+        .route(
+            "/create", // -> /todos/create
+            get(create_todo_handler).post(post_create_todo_handler),
+        )
+        .route("/toggle/:id", post(toggle_todo_handler))
+        .route("/delete/:id", post(delete_todo_handler))
 }
 
 fn on_request(request: &Request<Body>, _: &Span) {
