@@ -16,6 +16,7 @@ working at night too 08/08/26.. 11.59
 
 016/08/26 :::: woring 
 migrations yet not update only
+today execute many errors 
 
 
 
