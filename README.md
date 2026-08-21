@@ -1,4 +1,4 @@
-//orking
+//working
 03/08/2026 updated ::: work in progress 
 05/08/2026 updated ::: work in progress 
 06/08/2026 updated ::: work in progress // some updates and today execute the programe . its workin some issues ....
@@ -20,7 +20,7 @@ today execute many errors
 17/08/26
 migrations updated 
 still error occured ... yet not end 
-021/08/2026 updated ::: work in progress 
+
 
 
 .
@@ -36,6 +36,7 @@ error !!!
 
 soon  it will be done 
 
+021/08/2026 updated ::: work in progress 
 
 
 cargo watch -c -x run
