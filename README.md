@@ -15,7 +15,7 @@ working at night too 08/08/26.. 11.59
 015/08/026 updated  ::: work in progess >> only src and  src/data file has updated ..
 
 016/08/26 :::: wrong 
-migrations yet not update only
+migrations yet not update only......
 today execute many errors 
 17/08/26
 migrations updated 
