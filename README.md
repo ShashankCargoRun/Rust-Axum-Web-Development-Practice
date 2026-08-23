@@ -23,6 +23,7 @@ still error occured ... yet not end
 
 
 
+
 .
 error !!! 
 
@@ -39,5 +40,6 @@ soon  it will be done
 021/08/2026 updated ::: work in progress 
 022/08/2026 working :: work in progress
 
+023/08/2026 working ::: work in 
 
 cargo watch -c -x run
