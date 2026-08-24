@@ -53,3 +53,9 @@ pub struct LogInTemplate<'a> {
 pub struct ServerErrorTemplate {
     pub is_authenticated: bool,
 }
+
+#[derive(Template)]
+#[template(path = "pages/not-found.html")]
+pub struct PageNotFoundTemplate {
+    pub is_authenticated: bool,
+}
