@@ -47,4 +47,9 @@ pub struct LogInTemplate<'a> {
     pub password_error: &'a str,
     pub flash_data: FlashData,
 }
-////////////////////////////////////////////////////////////
+
+#[derive(Template)]
+#[template(path = "pages/server-error.html")]
+pub struct ServerErrorTemplate {
+    pub is_authenticated: bool,
+}
