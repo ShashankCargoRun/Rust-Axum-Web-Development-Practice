@@ -9,3 +9,4 @@ pub struct CreateTodoFormModel {
 pub struct ToggleTodoFormModel {
     pub is_done: bool,
 }
+
