@@ -1,7 +1,7 @@
 // use axum::routes;
 //mod routes;
 // use axum_app::routes;
-use axum_askama_tutorial::{init, models::app::AppState, routes};
+use axum_app::{init, models::app::AppState, routes};
 
 #[tokio::main]
 async fn main() {
