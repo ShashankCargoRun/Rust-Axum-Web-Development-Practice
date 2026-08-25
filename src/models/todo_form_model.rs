@@ -10,3 +10,8 @@ pub struct ToggleTodoFormModel {
     pub is_done: bool,
 }
 
+#[derive(Deserialize)]
+pub struct TodoPageQuery {
+    pub page: usize,
+}
+
