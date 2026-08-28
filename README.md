@@ -46,4 +46,6 @@ soon  it will be done
 025/08/2026 working ::: work in progress 
 026/08/2026 working :::: working properly 
 workingg
+
+28/08/26  appox done 
 cargo watch -c -x run
